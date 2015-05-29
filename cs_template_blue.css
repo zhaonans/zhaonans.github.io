@@ -1,0 +1,942 @@
+html{height:100%;}
+
+body 
+{
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-family: verdana, "lucida grande", geneva, sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    color: #333;
+    height:100%;
+    background: #ddd repeat-y 10px 0;
+}
+
+#wrapper
+{
+    position: relative; 
+    width: 760px;
+    background-color: #fff;
+    min-height: 100%;  
+}
+
+* html #wrapper
+{
+    height: 100%; 
+}
+
+
+
+
+#topbar
+{
+    position: relative;
+    width: 749px;
+    height: 35px;
+    border-right: 1px solid #ccc; 
+    margin-bottom: 4px;
+}
+
+
+
+
+/* UA REQUIRED BANNER STYLES*/
+
+#ua_banner {
+	height: 1px;
+	background: #8b6500 no-repeat 7px 0;
+	margin: 0px 0 4px 0;
+	padding: 0px;
+}
+
+#ua_banner img
+{
+    margin-left: 5px;
+}
+
+#ua_banner_links {
+	color: #FFFFFF;
+	float: right;
+	font-size: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 15px;
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#ua_banner_links li {
+	display: inline;
+	list-style-type: none;
+}
+
+#ua_banner_links li a {
+	color: #FFFFFF;
+}
+
+#ua_banner_links li a:hover {
+color: #CCCCCC;
+}
+
+#ua_site_link
+{
+    float: left;
+    width: 310px;
+    height: 42px;
+    display: block;
+    background: transparent no-repeat 0 0; /*IE hack to make link clickable*/
+    margin-left: 25px;
+}
+
+/*end UA styles*/
+
+
+
+
+
+
+
+/*this rule for faculty template only*/
+#faculty #ua_banner
+{
+    margin-bottom: 24px;
+}
+
+
+#uaLink
+{
+       position: absolute;
+       top: 8px;
+       left: 29px;
+       display: block;
+       width: 128px;
+       height: 9px;
+       background: transparent  no-repeat 0 1px;
+       letter-spacing: -1000em;
+       font-size: 1px;
+}
+
+#uaScienceLink
+{
+       position: absolute;
+       top: 24px;
+       left: 29px;
+       display: block;
+       width: 128px;
+       height: 9px;
+       background: transparent  no-repeat 0 1px;
+       letter-spacing: -1000em;
+       font-size: 1px;
+}
+
+#uaLogo
+{
+    position: absolute;
+    top: 21px;
+    left: 521px;
+}
+
+
+#masthead
+{
+    clear: both;
+    position: relative;
+    margin: 0 0 8px 24px;
+    width: 724px;
+    height: 350px;    
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; 
+    background-color: #fff;
+}
+
+#masthead img
+{
+    display: block;
+    margin: 0;
+}
+
+/*
+this rule for faculty template only
+remove border, set margin-bottom
+*/
+#faculty #masthead
+{  
+    height: 150px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+
+#logoLink
+{
+    position: absolute;
+    top: 0px;
+    left: 481px;
+    width: 244px;
+    height: 155px;
+}
+
+
+/*
+this rule for faculty template only
+change logo container height for this template
+*/
+#faculty #logoLink
+{
+    height: 155px;
+    overflow: hidden;
+}
+
+/*
+this rule for faculty template only
+move the logo image up higher to account for smaller masthead height
+*/
+#faculty #logoLink img
+{
+    margin-top: -5px;
+}
+
+#logoLink img
+{
+    border: none;
+}
+
+
+#logoLink a
+{    
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent no-repeat 0 0; /*hideous hack IE 6 needs background of any type  to display anchor in positioned div*/
+    border: none;
+}
+
+
+#content
+{
+    float: left;
+    margin: 0 0 60px 24px;
+    width: 470px;
+    display: inline; /*for IE's doubled float margin bug*/    
+}
+
+
+
+
+
+/*-----[UTILITY NAVIGATION STYLES]----------*/
+
+#utilityContainer
+{
+    float: left;
+    width: 725px;    
+    margin: 0 0 0 24px;
+    display: inline;    
+}
+
+#utilityNav
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 4px;
+    font-size: 10px;    
+}
+
+#utilityNav li
+{
+    display: block;
+    float: left;
+    padding: 2px 0;
+    margin-left: 2px;  
+}
+
+#utilityNav li a
+{
+    display: inline;
+    float: left;
+    padding: 2px 5px;    
+    line-height: 10px;
+    text-decoration: none;
+    color: #666;
+}
+
+#utilityNav li a:hover
+{
+    background-color: #ddd;
+    color: #000;    
+}
+
+#utilityNav li.navOn a
+{
+    background-color: #ddd;
+    color: #000;    
+}
+
+
+
+
+/*-----[GLOBAL NAVIGATION STYLES]----------*/
+
+#navContainer
+{
+    border-bottom: 1px solid #ccc;
+    float: left;
+    width: 725px;    
+    margin: 0 0 30px 24px;
+    display: inline;    
+}
+
+
+#globalNav
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 10px; 
+}
+
+#globalNav li
+{
+    display: block;
+    float: left;
+    padding: 0;
+    margin-right: 2px;
+}
+
+#globalNav li a
+{
+   display: inline;
+    float: left;
+    padding: 4px 10px 5px 10px;    
+    line-height: 10px;
+    text-decoration: none;
+    color: #666;  
+}
+
+#globalNav li a:hover
+{
+    background-color: #ddd;
+    color: #000;
+}
+
+#globalNav li.navOn a
+{
+    background-color: #ddd;
+    color: #000; 
+}
+
+
+
+
+/*-----[SIDEBAR NAVIGATION STYLES]----------*/
+
+
+#menuContainer
+{
+    float: right;
+    margin: 0 11px 60px 0;
+    width: 244px;
+    display: inline; /*for IE's doubled float margin bug*/
+}
+
+
+.sidebarMenu
+{
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #ccc;    
+}
+
+.sidebarMenu li
+{       
+    display: inline;
+}
+
+.sidebarMenu li.spacer
+{       
+    height: 24px;
+    width: 244px;
+    border-bottom: 1px solid #ccc;    
+    display: block;
+}
+
+.sidebarMenu li a
+{
+    display: block;
+    width: 226px;    
+    text-decoration: none;
+    padding: 2px 4px 3px 14px;    
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+    color: #666;
+    line-height: 12px;
+}
+
+/*Tan hack for IE5 width*/
+* html .sidebarMenu li a
+{
+    width: 244px;
+    widt\h: 226px;
+}
+
+.sidebarMenu li a:hover
+{   
+    background-color: #eee;
+    color: #000;
+}
+
+.sidebarMenu li.menuOn a
+{   
+    color: #000;
+    background-color: #dbdbdb;
+}
+
+* html .sidebarMenu li.menuOn a
+{   
+     background-color: #dbdbdb;
+}
+
+.sidebarMenu li.menuOn a:hover
+{
+    background-color: #dbdbdb;
+}
+
+
+
+
+
+
+
+/*-----[GENERIC CONTENT STYLES]----------*/
+
+
+
+h1,h2,h3,h4,h5, h6 
+{
+    margin: 0;
+    font-family: arial, helvetica, sans-serif;
+    color: #c03;
+    line-height: 1em;
+}
+
+p 
+{
+    margin: 0 0 15px 0;
+    line-height: 17px;
+}
+
+
+
+strong, b
+{
+    color: #444;
+}
+
+
+a
+{
+    color: #444;
+}
+
+a:visited
+{
+    color: #000;
+}
+
+a:hover
+{
+    color: #777;
+}
+
+hr
+{
+    color: #ccc;
+    background-color: #ccc;
+    height: 1px;
+    margin: 5px 0;
+    border: 0;
+}
+
+
+
+#content ul
+{
+    margin: 4px 0 18px 0;
+    padding: 0;
+    list-style: none;    
+}
+
+#content ul li
+{
+    padding-left: 12px;
+    background: transparent url(./bg_list_bullet.gif) no-repeat 0 5px;
+    line-height: 14px;
+    margin-bottom: 4px;
+}
+
+
+
+
+#content ol
+{  
+    position: relative;
+    left: -15px;
+    *left: 0;
+    _left: 0;
+    margin: 2px 0 18px 0;
+    *margin-left: 29px;
+    _margin-left: 29px;
+}
+
+
+#content ol li
+{
+    margin: 0 0 3px 0;
+    line-height: 14px;
+}
+
+
+blockquote
+{
+    margin: 0;
+    padding: 20px 30px;
+    font-style: italic;
+}
+
+
+table
+{
+    width: 100%;
+    margin: 4px 0 18px 0;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+caption
+{
+    padding: 4px 2px 4px 0;
+    text-align: left;
+    font-size: 11px;
+}
+
+th
+{
+    background-color: #efefef;
+}
+
+th, td
+{
+    padding: 2px 5px;
+    border: 1px solid #c9c9c9;    
+    font-size: 11px;
+    text-align: left;
+}
+
+tfoot td
+{
+    font-size: 10px;
+    color: #666;
+    border: none;
+}
+
+
+
+#content img
+{
+    display: block;
+    margin: 5px 0 18px 0;
+}
+
+#content img.wrapText
+{
+    float: left;
+    margin: 5px 10px 2px 0;
+}
+
+
+#introGraphic
+{
+    margin: 0 0 18px 0;
+}
+
+
+#introGraphic img
+{
+    margin: 0;
+}
+
+
+div.line hr
+{
+    margin: 0;
+    padding: 0;
+    display: none;
+    
+}
+
+div.line
+{
+    height: 2px;
+    margin: 0 0 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+
+/*-----[HOME PAGE STYLES]----------*/
+
+
+
+
+img#homeWelcome
+{
+    display: block;
+    margin: 0 0 18px 0;
+}
+
+
+
+#leftCol
+{
+    width: 225px;
+    float: left;
+    margin: 0 0 18px 0;
+}
+
+#rightCol
+{
+    width: 225px;
+    float: right;
+    margin: 0 0 18px 0;
+}
+
+
+#leftCol img, #rightCol img
+{
+    display: block;
+    border: none;
+    margin: 0 0 12px 0;
+}
+
+
+#content.homepage h1
+{
+    margin-bottom: 8px;
+    padding: 5px 0 6px 0;
+    border-top: 1px solid #ccc;
+    line-height: 14px;
+    font-size: 15px;
+    color: #444; 
+}
+
+
+#content.homepage h1 a
+{
+    display: block;
+    width: 219px;
+    height: 15px;
+    text-decoration: none;
+    color: #333;    
+}
+
+
+/*Modification section - change elements below for each 'scheme'*/
+
+#faculty #masthead h1
+{
+    color: #333;
+    width: 400px;
+}
+
+#faculty #masthead h2
+{
+    color: #666;
+    margin: 0;
+    width: 400px;
+}
+
+#faculty h2
+{
+    color: #8b6500;
+}
+
+#faculty h3
+{
+    margin-bottom: 6px;
+    padding: 5px 0 0 0;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #444;    
+}
+
+#topbar
+{
+        background: #8b6500  no-repeat 0 0;
+}
+
+h1
+{
+    font-size: 16px;
+    color: #8b6500;
+}
+
+h2
+{
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+h3
+{
+    font-size: 12px;    
+    color: #8b6500;
+    line-height: 15px;
+}
+
+h4
+{
+    font-size: 11px;
+    color: #444;
+}
+
+h5
+{
+    font-size: 11px;
+    color: #c6003f;
+    font-weight: normal;    
+}
+
+h6
+{
+    font-size: 11px;
+    color: #000;
+    font-weight: normal;  
+}
+
+
+
+#content.homepage h2
+{
+    margin-bottom: 0;            
+    font-size: 12px;
+    line-height: 15px; 
+}
+
+
+#content.homepage p
+{
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+#content.sectionpage h1
+{
+    margin-bottom: 24px;
+}
+
+
+#content.sectionpage h2
+{
+    margin-bottom: 6px;
+    padding: 5px 0 0 0;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #8b6500;
+}
+
+
+
+/*homepage sidebar styles*/
+
+#homeSidebar
+{
+    float: right;
+    margin: 0 11px 60px 0;
+    width: 244px;
+    display: inline; /*for IE's doubled float margin bug*/
+}
+
+
+#homeSidebar h2
+{
+    margin-bottom: 6px;
+    padding: 5px 0 0 0;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #8b6500;
+}
+
+
+#homeSidebar p
+{
+    line-height: 16px;
+    margin-bottom: 18px;
+}
+
+
+/*homepage employment div styles*/
+
+#employment
+{
+    background-color: #eee;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+#employment h1 a
+{
+    color: #666;
+}
+
+#employment p
+{
+    padding: 4px;
+}
+
+
+
+
+
+/*-----[LANDING PAGE STYLES]----------*/
+
+
+#content.landingpage img
+{
+    display: block;
+    border: 1px solid #ccc;
+    margin: 0 0 12px 0;
+}
+
+#content.landingpage h2
+{
+    margin-bottom: 12px;
+    padding: 5px 0 6px 0;
+    border-top: 13px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 14px;
+    font-size: 13px;
+     
+}
+
+
+#content.landingpage h2 a
+{
+    display: block;
+    width: 202px;
+    padding-left: 2px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #c03;
+    background: transparent no-repeat right 2px;   
+}
+
+/*Tan hack for IE5 width*/
+* html #content.landingpage h2 a
+{
+    width: 226px;
+    widt\h: 202px;
+}
+
+#content.landingpage h3
+{
+    margin-bottom: 0;            
+    font-size: 12px;
+    line-height: 15px; 
+}
+
+
+#content.landingpage p
+{
+    line-height: 16px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+/*-----[FOOTER STYLES]----------*/
+
+
+#footer
+{
+    clear: both;
+    margin: 0 0 0 24px;
+    padding-bottom: 10px;
+    width: 724px;
+    position: relative;
+    font-size: 10px;
+    color: #999;
+    font-family: arial, helvetica, sans-serif;
+    border-top: 1px solid #ccc;
+}
+
+#footer p
+{  margin: 0;    
+    font-size: 10px;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+/*-----[FACULTY TEMPLATE STYLES]----------*/
+
+#wrapper.template #topbar
+{
+    margin-bottom: 12px;
+}
+
+#wrapper.template #masthead
+{
+    height: 68px;
+    margin-bottom: 24px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}
+
+#templateHeader
+{
+    float: left;
+    width: 468px;
+    height: 68px;
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#templateLogo
+{
+    float: left;    
+    border-left: 1px solid #ccc;
+    height: 68px;    
+}
+
+#templateLogo #smallLogo
+{
+    margin: 8px 0 0 15px;
+    border: 0; 
+}
+
+
+#wrapper.template h2
+{
+    padding-top: 6px;
+    margin-bottom: 6px;
+    border-top: 1px solid #ccc;
+    font-size: 13px;
+}
+
